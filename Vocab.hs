@@ -9,9 +9,17 @@ import           Data.Text (Text)
 import qualified Data.Text as T
 import qualified Data.Text.IO as TIO
 
+-- type Entry = (E)
 
-printAllwords :: IO()
-printAllwords = do
-    putStrLn "Please provide the file name: "
-    name <- readFile getArgs
-    print $ length $ words name
+
+makeListWords :: String -> [Text]
+makeListWords name = words $ TIO.readFile name
+
+printAllwords :: TIO.FilePath
+printAllwords = "Yash Sonune"
+
+
+
+    
+    -- name <- readFile name
+    -- print $ length $ words name
