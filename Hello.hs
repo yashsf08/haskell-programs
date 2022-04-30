@@ -31,7 +31,7 @@ decideWhat = do
     else "nothing much to do"
 
 advDecision :: String -> String
-advDecision decision  
+advDecision decision
         | decision == "morning" = "breakfast"
         | decision == "afternoon" = "college studies"
         | decision == "evening" = "part-time"
@@ -43,7 +43,7 @@ advDecision decision
 --     else "nothing much to do"
 
 specialCase :: String -> String
-specialCase decision = 
+specialCase decision =
     case decision of
         "morning" -> "It's morning!"
         "afternoon" -> "It's afternoon!"
@@ -61,10 +61,10 @@ sayHi = putStrLn "Hello world of Haskell!"
 
 
 greetS :: String -> IO ()
-greetS name = putStrLn $ "Hello, " ++ name 
+greetS name = putStrLn $ "Hello, " ++ name
 
 greet :: String -> String
-greet name = "Hello, " ++ name 
+greet name = "Hello, " ++ name
 -- greet _ = "Hello, Yash!"
 
 -- Mutl

@@ -17,7 +17,14 @@ import           Hello  (
                     mysayHi,
                    )
 
+import           Radar ( rotate
+                       , orient
+                       ) 
 
+
+import           Codewars ( fib
+                          , twoTothree
+                          )
 -- import           Vocab (
 --                     printAllwords,
 --                     )
@@ -32,23 +39,31 @@ import qualified Data.Text.IO as TIO
 import Data.String (IsString(fromString))
 
 
-main :: IO ()
-main = do
-    name <- getArgs 
-    text <- TIO.readFile $ name !! 0
-    let ws = map head $ group $ sort $ map T.toCaseFold $ filter (not . T.null) $ map (T.dropAround $ not . isLetter) $ T.words text
-    print $ T.unwords ws
-    print $ length ws
-    TIO.writeFile (name !! 1) $ fromString "Writing Something to the file"
-    TIO.writeFile (name !! 1) $ T.unwords ws
+main :: IO()
+main = do 
+    number <- getArgs
+    print $ fib $ read $ number!!0 
+
+
+-- main :: IO ()
+-- main = do
+--     name <- getArgs
+--     text <- TIO.readFile $ name !! 0
+--     let ws = map head $ group $ sort $ map T.toCaseFold $ filter (not . T.null) $ map (T.dropAround $ not . isLetter) $ T.words text
+--     print $ T.unwords ws
+--     print $ length ws
+--     TIO.writeFile (name !! 1) $ fromString "Writing Something to the file"
+--     TIO.writeFile (name !! 1) $ T.unwords ws
+
+
 
 -- main :: IO ()
 -- main = do
     -- putStrLn "Please provide file name: "
-    -- name <- getArgs 
+    -- name <- getArgs
     -- let x = makeListWords name !! 0
     -- print $ printAllwords x
-    -- 
+    --
     -- print name
 
 
