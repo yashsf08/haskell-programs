@@ -1,4 +1,4 @@
-module FixedPrecision (
+module ChapterTwo.ChapterTwoOne.FixedPrecision (
     uniValue
   , deciValue
   , centiValue
