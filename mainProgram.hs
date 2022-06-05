@@ -45,6 +45,7 @@ main = do
     print $ fib $ read $ number!!0 
 
 
+
 -- main :: IO ()
 -- main = do
 --     name <- getArgs
