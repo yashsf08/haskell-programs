@@ -9,6 +9,7 @@ import           Hello  (
                     greet,
                     greetS,
                     greetings,
+                    greetings',
                     typeplay,
                     listO,
                     list1,
@@ -22,9 +23,9 @@ import           Radar ( rotate
                        ) 
 
 
-import           Codewars ( fib
-                          , twoTothree
-                          )
+-- import           Codewars ( fib
+--                           , twoTothree
+--                           )
 -- import           Vocab (
 --                     printAllwords,
 --                     )
@@ -39,12 +40,17 @@ import qualified Data.Text.IO as TIO
 import           Data.String (IsString(fromString))
 
 
-main :: IO()
-main = do 
-    number <- getArgs
-    print $ fib $ read $ number!!0 
 
+main :: IO ()
+main = do
+  args <- getArgs
+  print args
+  
 
+-- main :: IO()
+-- main = do 
+--     number <- getArgs
+--     print $ fib $ read $ number!!0 
 
 -- main :: IO ()
 -- main = do

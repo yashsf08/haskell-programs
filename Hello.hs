@@ -6,6 +6,7 @@ module Hello (
     greet,
     greetS,
     greetings,
+    greetings',
     typeplay,
     listO,
     list1,
@@ -13,6 +14,7 @@ module Hello (
     insertElem,
     ) where
 
+import           System.Environment
 
 -- Adds an element in the list
 insertElem :: a -> [a] -> Int -> [a]
@@ -86,6 +88,13 @@ greetings = do
     eventName <- getLine
     putStrLn $ "Hola " ++ name
     putStrLn $ "Espero " ++ eventName ++ " te guste"
+
+greetings' :: IO ()
+greetings' = do
+    name <- getArgs
+    putStrLn $ "Hola " ++ show name
+    -- putStrLn $ "Espero " ++ eventName ++ " te guste"
+
 
 
 
