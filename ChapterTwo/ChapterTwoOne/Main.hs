@@ -1,10 +1,6 @@
-{-# -XOverloadedStrings #-}
-
-
-
 module Main where
 
-import FixedPrecision
+import ChapterTwo.ChapterTwoOne.FixedPrecision
 
 main :: IO()
 main = do
