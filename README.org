@@ -1,0 +1,54 @@
+#+title: Basic Haskell Documentation
+#+setupfile: https://fniessen.github.io/org-html-themes/org/theme-NAME.setup
+
+* Starting with Hello World;
+    #+begin_src haskell
+	main :: IO()
+	main = putStrLn "Hello world!"
+    #+end_src
+* Monads;
+    #+begin_src haskell
+	main :: IO()
+	main = putStrLn "Hello world!"
+    #+end_src
+* Monoids
+* Haskell Repl Shortcuts
+** :t - 'to check the type'
+** :doc - 'to check the documentation'
+** :i - 'information'
+** :set - 'to enable/disable extensions'
+   * :set -XOverloadedStrings
+** 
+
+
+
+
+
+* Plutus Smart Contracts
+
+** Pioneer Program Week01
+
+*** Extensions
+    #+begin_src haskell
+
+      {-# LANGUAGE DataKinds                  #-} -- 
+      {-# LANGUAGE DeriveAnyClass             #-}
+      {-# LANGUAGE DeriveGeneric              #-}
+      {-# LANGUAGE DerivingStrategies         #-}
+      {-# LANGUAGE FlexibleContexts           #-}
+      {-# LANGUAGE GeneralizedNewtypeDeriving #-}
+      {-# LANGUAGE LambdaCase                 #-}
+      {-# LANGUAGE MultiParamTypeClasses      #-}
+      {-# LANGUAGE NoImplicitPrelude          #-}
+      {-# LANGUAGE OverloadedStrings          #-}
+      {-# LANGUAGE RecordWildCards            #-}
+      {-# LANGUAGE ScopedTypeVariables        #-}
+      {-# LANGUAGE TemplateHaskell            #-}
+      {-# LANGUAGE TypeApplications           #-}
+      {-# LANGUAGE TypeFamilies               #-}
+      {-# LANGUAGE TypeOperators              #-}
+
+    #+end_src
+    
+*** kjkjk
+
